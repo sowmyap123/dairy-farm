@@ -1,0 +1,275 @@
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  
+  font-size: 18px;
+ 
+  cursor: pointer;
+  text-align:left;
+  width: 300px;
+  padding: 10px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 300px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align:center;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+.admincontent{
+	width:1200px;
+	margin:auto;
+	
+	
+}
+.head{
+	float:left;
+	padding:20px;
+}
+.menul{
+float:right;
+padding:20px;	
+	}
+.mainmenu{
+	height:80px;
+	background-color:#f9f8f3;
+	}
+	
+	.left{
+		width:25%;
+		float:left;
+
+		
+		
+	}
+	.right{
+	width:70%;
+    float:right;	
+		
+	}
+	
+/* for verticle menu */
+#nav {
+    border:2px solid #CFCFC;
+    border-radius:3px;
+    -moz-border-radius-bottom:3px;
+    -webkit-border-radius:3px;	
+}
+#nav, #nav ul {
+    list-style:none;
+    padding:0;
+    width:260px;
+}
+#nav ul {
+    position:relative;
+    z-index:-1;
+}
+#nav li {
+    position:relative;
+    z-index:100;
+	border:1px solid #1A2A3A;
+}
+#nav ul li {
+    margin-top:-23px;
+
+    -moz-transition:  0.4s linear 0.4s;
+    -ms-transition: 0.4s linear 0.4s;
+    -o-transition: 0.4s linear 0.4s;
+    -webkit-transition: 0.4s linear 0.4s;
+    transition: 0.4s linear 0.4s;
+	
+}
+
+#nav ul li ul {
+    margin-top:-23px;
+
+    -moz-transition:  0.4s linear 0.4s;
+    -ms-transition: 0.4s linear 0.4s;
+    -o-transition: 0.4s linear 0.4s;
+    -webkit-transition: 0.4s linear 0.4s;
+    transition: 0.4s linear 0.4s;
+}
+
+#nav li a {
+    background-color:#091929;
+    color:#FCFEFF;
+    display:block;
+    font-size:14px;
+    font-weight:bold;
+    line-height:28px;
+    outline:0;
+    padding-left:10px;
+    text-decoration:none;
+}
+#nav li a.sub {
+    background-color:#091929;
+}
+
+#nav li a.subsub {
+   
+}
+
+#nav li a + img {
+    cursor:pointer;
+    display:none;
+    height:10px;
+    left:0;
+    position:absolute;
+    top:0;
+    width:10px;
+}
+#nav li a img {
+    border-width:0px;
+    height:15px;
+    line-height:28px;
+    margin-right:8px;
+    vertical-align:middle;
+    width:15px;
+}
+#nav li a:hover {
+    background-color:#225082;
+	
+}
+#nav ul li a {
+    
+    color:#FCFEFF;
+    font-size:11px;
+    line-height:22px;
+}
+
+#nav ul li ul a {
+    background-color:#fff;
+    border-bottom:1px solid #ccc;
+    color:#FCFEFF;
+    font-size:11px;
+    line-height:22px;
+}
+
+#nav ul li a:hover {
+    background-color:#bcbdc1;
+    color:#FCFEFF;
+}
+
+#nav ul li ul a:hover {
+    background-color:#bcbdc1;
+    color:#FCFEFF;
+}
+
+#nav ul li a img {
+    background: url("../images/bulb.png") no-repeat;
+    border-width:0px;
+    height:16px;
+    line-height:22px;
+    margin-right:5px;
+    vertical-align:middle;
+    width:16px;
+}
+
+#nav ul li ul a img {
+    background: url("../images/bulb.png") no-repeat;
+    border-width:0px;
+    height:16px;
+    line-height:22px;
+    margin-right:5px;
+    vertical-align:middle;
+    width:16px;
+}
+
+#nav a.sub:focus {
+    background:#225082;
+    outline:0;
+}
+
+#nav a.subsub:focus {
+    background:#225082;
+    outline:0;
+}
+
+#nav li a:focus ~ ul > li {
+    margin-top:0;
+
+    -moz-transition:  0.4s linear;
+    -ms-transition: 0.4s linear;
+    -o-transition: 0.4s linears;
+    -webkit-transition: 0.4s linears;
+    transition: 0.4s linear;
+}
+
+
+#nav li ul a:focus + ul li ul {
+    margin-top:0;
+
+    -moz-transition:  0.4s linear;
+    -ms-transition: 0.4s linear;
+    -o-transition: 0.4s linears;
+    -webkit-transition: 0.4s linears;
+    transition: 0.4s linear;
+}
+
+#nav li ul li a:focus + ul{
+    margin-top:0;
+
+    -moz-transition:  0.4s linear;
+    -ms-transition: 0.4s linear;
+    -o-transition: 0.4s linears;
+    -webkit-transition: 0.4s linears;
+    transition: 0.4s linear;
+}
+
+#nav a:focus + img, #nav a:active + img {
+    display:block;
+}
+#nav a.sub:active {
+    background:#bcbdc1;
+    outline:0;
+}
+
+#nav a.subsub:active {
+    background:#bcbdc1;
+    outline:0;
+}
+
+#nav a:active ~ ul li {
+    margin-top:0;
+}
+
+#nav a:active ~ ul li ul {
+    margin-top:0;
+}
+
+#nav ul:hover li {
+    margin-top:0;
+}
+#menu{
+
+}
+
+
+	
+	
+	
